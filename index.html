@@ -41,13 +41,13 @@
         <script src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js"></script>
         <script>
             // ====== wow.js
-                    new WOW().init();
+            new WOW().init();
             // ====== 나눔스퀘어
-                    WebFont.load({
-                        google: {
-                            families: ['Nanum Square:regular,bold']
-                        }
-                    });
+            WebFont.load({
+                google: {
+                    families: ['Nanum Square:regular,bold']
+                }
+            });
         </script>
     </head>
 
@@ -199,7 +199,7 @@
                             <div class="img"></div>
                             <p>PG</p>
                             <span>Propylene Glycol</span>
-                           <img src="./images/w-arrow.svg" class="wArrow" alt="화살표">
+                            <img src="./images/w-arrow.svg" class="wArrow" alt="화살표">
                             <div class="bg"></div>
                         </div>
                         <!-- 2 -->
@@ -215,7 +215,7 @@
                             <div class="img"></div>
                             <p>SM</p>
                             <span>Styrene Monomer</span>
-                           <img src="./images/w-arrow.svg" class="wArrow" alt="화살표">
+                            <img src="./images/w-arrow.svg" class="wArrow" alt="화살표">
                             <div class="bg"></div>
                         </div>
                         <!-- 4 -->
@@ -223,7 +223,7 @@
                             <div class="img"></div>
                             <p>PGE</p>
                             <span>Propylene Glycol Ether</span>
-                         <img src="./images/w-arrow.svg" class="wArrow" alt="화살표">
+                            <img src="./images/w-arrow.svg" class="wArrow" alt="화살표">
                             <div class="bg"></div>
                         </div>
                     </div>
@@ -876,6 +876,11 @@
                 pagination: {
                     el: ".swiper-pagination", // 표시할 요소 선택자
                     clickable: true, // 버튼 클릭시 슬라이드 이동하도록 설정
+                },
+                // 자동 재생 설정
+                autoplay: {
+                    delay: 3000, // 각 슬라이드 간의 재생 지연 시간 (밀리초 단위)
+                    disableOnInteraction: false, // 사용자 상호 작용 후에도 자동 재생 유지
                 },
             });
         </script>
