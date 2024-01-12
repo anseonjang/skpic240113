@@ -39,6 +39,7 @@ img:hover {
 
 #wrap {
     width: 100%;
+    min-width: 1460px; /* 추가 */
 }
 
 /* =====================
@@ -239,6 +240,7 @@ main .btnTop img {
 }
 
 .main_visual {
+    min-width: 1460px; /* 추가 */
     width: 100%;
     height: 1080px;
     position: relative;
@@ -332,6 +334,7 @@ div.swiper-button-next {
 /* 각 section 일괄 스타일 적용 */
 section.products,
 section.career{
+    min-width: 1460px; /* 추가 */
     width: 100%;
     height: 1080px;
     padding: 140px 0 170px 0;
@@ -614,6 +617,8 @@ section.career .careerInner .redBox .bBox .moreBox {
 /* news room */
 
 section.newsRoom {
+    width: 100%; /* 추가 */
+    min-width: 1460px; /* 추가 */
     background-color: #ededf1;
     height: 950px;
    padding-top: 140px;
@@ -800,6 +805,8 @@ section p {
 =======================*/
 
 footer {
+    width: 100%; /* 추가 */
+    min-width: 1460px; /* 추가 */
     background-color: #27272a;
     font-family: 'Nanum Gothic';
     padding: 70px 0 100px 0;
