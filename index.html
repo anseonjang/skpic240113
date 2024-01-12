@@ -1,0 +1,884 @@
+    <!DOCTYPE html>
+    <html lang="ko">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>이름 - SK Picglobal </title>
+        <!-- rel="preconnect" - html에게 특정 도메인에 연결하라는 HTML태그임 -->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <!-- crossorigin : 스크립트를 익명으로 가져옴 
+        인증정보 전송하지 못하도록 차단하는 역할을 함  
+        보안상의 이유로 들어감      link, script, img, video, audio  -->
+        <!-- 페비콘 -->
+        <link rel="shoutcut icon" href="./images/fv.svg">
+        <!-- rel="stylesheet":css 형식임을 나타냄 -->
+        <link href="https://fonts.googleapis.com/css2?family=Inter&display=swap" rel="stylesheet">
+        <link
+            href="https://fonts.googleapis.com/css2?family=Exo+2:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300&family=Titillium+Web:wght@200;300;400;700&display=swap"
+            rel="stylesheet">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css">
+        <!-- font-awesome 공식사이트 - https://fontawesome.com/ -->
+        <!-- rel="stylesheet":css 형식임을 나타냄 -->
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Nanum+Gothic:400,700&display=swap">
+        <link rel="stylesheet" href="https://site-assets.fontawesome.com/releases/v6.5.0/css/all.css">
+        <!-- 나눔스퀘어 -->
+        <!-- <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/font-nanum@1.0.0/nanumsquare.css"> -->
+        <link rel="stylesheet" href="./css/style.css">
+        <!-- slick.css => css import 로 부르면 나오지 않음 -->
+        <!-- slic -->
+        <link rel="stylesheet" href="./css/slick.css">
+        <link rel="stylesheet" href="./css/slick-theme.css">
+        <script src="./js/jquery-1.11.3.min.js"></script>
+        <script src="./js/jquery.slicknav.js"></script>
+        <script src="./js/picMain.js"></script>
+        <!-- news room slick -->
+        <script src="./js/slick.1.9.0.min.js"></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+        <!-- https://animate.style/ -->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js"></script>
+        <script>
+            // ====== wow.js
+                    new WOW().init();
+            // ====== 나눔스퀘어
+                    WebFont.load({
+                        google: {
+                            families: ['Nanum Square:regular,bold']
+                        }
+                    });
+        </script>
+    </head>
+
+    <body>
+        <!-- #wrap>header>.innerHeader -->
+        <div id="wrap">
+            <!-- =================================
+                header 
+            ====================================-->
+            <header>
+                <div class="headerBar">
+                    <div class="innerHeader">
+                        <!-- logo -->
+                        <!-- h1.logo>a>img -->
+                        <h1 class="logo">
+                            <a href="#">
+                                <img src="./images/skPic-logo.svg" alt="sk picglobal logo">
+                            </a>
+                        </h1>
+                        <!-- pcmenu -->
+                        <!-- nav.nav>.inner>ul#menu.nav-list>li.in_menu0$*5>a -->
+                        <nav class="nav">
+                            <div class="inner">
+                                <ul id="menu" class="nav-list">
+                                    <li class="in_menu01">
+                                        <a href="#">
+                                            Corporation
+                                        </a>
+                                        <!-- ul.submenu>li*5>a{sub$} -->
+                                        <ul class="submenu">
+                                            <li><a href="#">SK Picglobal</a></li>
+                                            <li><a href="#">CEO메세지</a></li>
+                                            <li><a href="#">연혁</a></li>
+                                            <li><a href="#">CI</a></li>
+                                            <li><a href="#">윤리경영</a></li>
+                                        </ul>
+                                    </li>
+                                    <li class="in_menu02">
+                                        <a href="#">Products</a>
+                                        <!-- sub -->
+                                        <ul class="submenu">
+                                            <li><a href="#">PG</a></li>
+                                            <li><a href="#">PGUSP</a></li>
+                                            <li><a href="#">PGF</a></li>
+                                            <li><a href="#">PGI</a></li>
+                                            <li><a href="#">DPG</a></li>
+                                        </ul>
+                                    </li>
+                                    <li class="in_menu03">
+                                        <a href="#">Customers</a>
+                                        <!-- sub -->
+                                        <ul class="submenu">
+                                            <li><a href="#">제품 자료실</a></li>
+                                            <li><a href="#">고객문의</a></li>
+                                        </ul>
+                                    </li>
+                                    <li class="in_menu04">
+                                        <a href="#">Communication</a>
+                                        <!-- sub -->
+                                        <ul class="submenu">
+                                            <li><a href="#">News</a></li>
+                                            <li><a href="#">전자공고</a></li>
+                                            <li><a href="#">공시정보</a></li>
+                                        </ul>
+                                    </li>
+                                    <li class="in_menu05">
+                                        <a href="#">Career</a>
+                                        <!-- sub -->
+                                        <ul class="submenu">
+                                            <li><a href="#">채용공고</a></li>
+                                            <li><a href="#">직원인터뷰</a></li>
+                                        </ul>
+                                    </li>
+                                </ul>
+                            </div>
+                        </nav>
+                        <!-- pc search,lang -->
+                        <!-- ul.searchLang>li*3>a -->
+                        <ul class="searchLang">
+                            <li><a href="#">
+                                    <i class="fa-regular fa-magnifying-glass"></i>
+                                    <!-- <img src="./images/icon_search_w.svg" alt="검색버튼"> -->
+                                </a></li>
+                            <li><a href="#">KO</a></li>
+                            <li><a href="#">EN</a></li>
+                        </ul>
+                        <!-- mobile search, toggle -->
+                        <!-- ul.searchToggle>li*2>a>img -->
+                        <ul class="searchToggle">
+                            <li><a href="#"><img src="./images/icon_search_w.svg" alt="검색버튼"></a></li>
+                            <li><a href="#"><img src="./images/toggle-right.svg" alt="햄버거버튼"></a></li>
+                        </ul>
+                    </div>
+                    <!-- pc sub menu bg -->
+                    <div class="smenu_bar"></div>
+                </div>
+            </header>
+            <!-- =================================
+                main - 전체 콘텐츠 영역 
+            ====================================-->
+            <!-- main>section.products>h2{products} -->
+            <main>
+                <!-- 메인슬라이드 -->
+                <section class="main_visual">
+                    <h2 class="blind">main_visual</h2>
+                    <!-- .swiper.mySwiper -->
+                    <!-- 슬라이드, 인디케이터, 이전다음버튼  -->
+                    <div class="swiper mySwiper">
+
+                        <!-- 스와이퍼 슬라이드 -->
+                        <!-- .swiper-wrapper -->
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide">
+                                <!-- p.sm+p.bigText -->
+                                <p class="sm wow animate__flipOutY">SK Picglobal이 이뤄낸 기술 변화가 </p>
+                                <p class="bigText wow animate__flipOutY">
+                                    세상을 바꿉니다.</p>
+                            </div>
+                            <div class="swiper-slide">
+                                <p class="sm">삶의 질을 높이는 </p>
+                                <p class="bigText"> Global Eco-Life
+                                </p>
+                            </div>
+                            <div class="swiper-slide">
+                                <p class="sm">삶의 가치를 높이는</p>
+                                <p class="bigText">SK Picglobal의 기술</p>
+                            </div>
+                        </div>
+
+                        <!-- 인디케이터 -->
+                        <div class="swiper-pagination slides-pagenation"></div>
+
+                        <!-- 이전,다음버튼 -->
+                        <!-- .swiper-button-prev -->
+                        <div class="swiper-button-prev"></div>
+                        <div class="swiper-button-next"></div>
+                    </div>
+
+                </section>
+                <section class="products">
+                    <h2>Products <span></span></h2>
+                    <p>삶의 가치를 높이는 SK Picglobal의 기술</p>
+                    <!-- 아코디언 -->
+                    <!-- .pd_list>.option.active -->
+                    <div class="pd_list wow animate__flipOutY">
+                        <!-- 1 -->
+                        <div class="option active"
+                            style="--optionBackground:url(../images/product01_active.jpg)no-repeat;">
+                            <div class="img"></div>
+                            <p>PG</p>
+                            <span>Propylene Glycol</span>
+                            <a href="#" class="wArrow"><img src="./images/w-arrow.svg" alt="화살표"></a>
+                            <div class="bg"></div>
+                        </div>
+                        <!-- 2 -->
+                        <div class="option" style="--optionBackground:url(../images/product02_active.jpg)no-repeat;">
+                            <div class="img"></div>
+                            <p>PO</p>
+                            <span>Propylene Oxidel</span>
+                            <a href="#" class="wArrow"><img src="./images/w-arrow.svg" alt="화살표"></a>
+                            <div class="bg"></div>
+                        </div>
+                        <!-- 3 -->
+                        <div class="option" style="--optionBackground:url(../images/product03_active.jpg)no-repeat;">
+                            <div class="img"></div>
+                            <p>SM</p>
+                            <span>Styrene Monomer</span>
+                            <a href="#" class="wArrow"><img src="./images/w-arrow.svg" alt="화살표"></a>
+                            <div class="bg"></div>
+                        </div>
+                        <!-- 4 -->
+                        <div class="option" style="--optionBackground:url(../images/product04_active.jpg)no-repeat;">
+                            <div class="img"></div>
+                            <p>PGE</p>
+                            <span>Propylene Glycol Ether</span>
+                            <a href="#" class="wArrow"><img src="./images/w-arrow.svg" alt="화살표"></a>
+                            <div class="bg"></div>
+                        </div>
+                    </div>
+                </section>
+
+                <section class="career">
+                    <h2 class="blind">career</h2>
+                    <!-- redBox -->
+                    <!-- .redBox>.tBox+.bBox -->
+                    <div class="careerInner wow animate__flipOutY">
+                        <!-- 이전, 다음버튼 -->
+
+                        <div class="prevNext">
+                            <div id="prevBtn"><i class="fa-regular fa-arrow-left-long"></i></div>
+                            <div id="nextBtn"><i class="fa-regular fa-arrow-right-long"></i></div>
+                        </div>
+
+                        <div class="redBox">
+                            <!-- 상단 흰색-뉴스 -->
+                            <div class="tBox">
+                                <!-- .news_slide>.items>.leftText+.rightBtn -->
+                                <div class="news_slide">
+
+                                    <!-- 1 -->
+                                    <div class="items">
+                                        <div class="leftText">
+                                            <p class="tText">
+                                                <span class="skcp">SK 바이오사이언스
+                                                </span><span class="date">~2024-01-12</span></p>
+                                            <p class="bText">23년 4분기 HOUSE HR 경력사원 수시채용</p>
+                                        </div>
+                                        <div class="rightBtn">
+                                            <a href="#"> D - 3 </a>
+                                        </div>
+                                    </div>
+                                    <!-- 2 -->
+                                    <div class="items">
+                                        <div class="leftText">
+                                            <p class="tText">
+                                                <span class="skcp">SK 매직
+                                                </span><span class="date">~2024-01-16</span></p>
+                                            <p class="bText">청주공장 의약품생산 계약직채용(신입/경력)</p>
+                                        </div>
+                                        <div class="rightBtn">
+                                            <a href="#"> D - 7 </a>
+                                        </div>
+                                    </div>
+                                    <!-- 3 -->
+                                    <div class="items">
+                                        <div class="leftText">
+                                            <p class="tText">
+                                                <span class="skcp">SK 브로드밴드
+                                                </span><span class="date">~2024-01-12</span></p>
+                                            <p class="bText">해저케이블 운용 전문가</p>
+                                        </div>
+                                        <div class="rightBtn">
+                                            <a href="#"> D - 3 </a>
+                                        </div>
+                                    </div>
+                                    <!-- 4 -->
+                                    <div class="items">
+                                        <div class="leftText">
+                                            <p class="tText">
+                                                <span class="skcp">SK 그룹
+                                                </span><span class="date">~2024-01-12</span></p>
+                                            <p class="bText">프론트앤드개발자 (신입/경력) </p>
+                                        </div>
+                                        <div class="rightBtn">
+                                            <a href="#"> D - 5 </a>
+                                        </div>
+                                    </div>
+                                    <!-- 5 -->
+                                    <div class="items">
+                                        <div class="leftText">
+                                            <p class="tText">
+                                                <span class="skcp">SK 케미칼
+                                                </span><span class="date">~2024-01-12</span></p>
+                                            <p class="bText">Figma Designer (신입/경력) </p>
+                                        </div>
+                                        <div class="rightBtn">
+                                            <a href="#"> D - 5 </a>
+                                        </div>
+                                    </div>
+
+
+
+                                </div>
+                            </div>
+                            <!-- 하단 빨강-채용사이트넘어가기 -->
+                            <div class="bBox">
+                                <!-- text  -->
+                                <!-- p.top+span -->
+                                <p class="top">
+                                    SK Picglobal 에서
+                                </p>
+                                <span class="text">
+                                    꿈을 펼칠 당신을 기다립니다.
+                                </span>
+                                <!-- more btn  -->
+                                <!-- .moreBox>.btn>a>span{More} -->
+
+                                <div class="moreBox">
+                                    <div class="btn">
+                                        <a href="#">
+                                            <span>More</span>
+                                            <i class="fal fa-chevron-right"></i>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <section class="newsRoom">
+                    <h2>News room<span></span></h2>
+                    <p> SK Picglobal의 다양한 소식과 정보를 만나보세요.</p>
+
+                    <!-- slick news -->
+                    <!-- .bbs>.inner>.inner_bbs>.tab_btn>ul>li.active -->
+                    <div class="bbs">
+                        <div class="inner">
+                            <div class="inner_bbs">
+                                <div class="tab_btn">
+                                    <ul>
+                                        <li class="active">전체</li>
+                                        <li>최신뉴스</li>
+                                        <li>기술동향</li>
+
+                                    </ul>
+                                </div>
+                                <!-- .tabs>.tab.active>.slider>.item -->
+                                <div class="tabs">
+                                    <!-- tab menu  1 -->
+                                    <div class="tab active">
+                                        <div class="slider wow animate__flipOutY">
+                                            <!-- 1 -->
+                                            <div class="item">
+                                                <!-- .inner_item>.title>h3+span -->
+                                                <div class="inner_item">
+                                                    <div class="title">
+                                                        <h3>* SK 케미칼</h3>
+                                                        <span> 등록 2024-01-11</span>
+                                                    </div>
+                                                    <!-- 기사 -->
+                                                    <h4>SK, 국내 최대 규모 재생에너지 전력 구매… 19만 가구 1년분</h4>
+                                                    <p>에스케이(SK)그룹은 최근 에스케이텔레콤, 에스케이실트론, 에스케이㈜머티리얼즈 등 9개 계열사와 에스케이
+                                                        이엔에스(E&S)가 재생에너지 직접구매계약(PPA)을 위한 거래협정서를 체결했다고 24일 밝혔다. 재생에너지
+                                                        피피에이는 재생에너지로 생산된 전기를 직접 구매해 사용하는 것으로, 탄소중립(넷제로)과 아르이(RE)100(기업에서
+                                                        사용하는 전력의 100%를 재생에너지로 대체하자는 국제 프로젝트) 이행을 위한 기업들의 주요 수단으로 활용되고
+                                                        있다.
+                                                        이번 직접구매계약의 총 용량은 국내 최대 규모인 연 537기가와트시(GWh)로, 약 19만 가구가 1년 동안 사용할
+                                                        수 있는 전력량이다. 이중 에스케이㈜머티리얼즈는 지난해 에스케이 계열사 가운데 최초로 연 65GWh 규모의
+                                                        구매계약을 체결한 데 이어 이번에도 참여사 중 가장 많은 171GWh를 계약했다. 에스케이그룹은 “공급업체는 복수의
+                                                        사업자가 참여한 가운데 비교 견적을 통해 가격 경쟁력과 공급 안정성을 갖춘 에스케이 이엔에스가 선정됐다”고
+                                                        설명했다.
+                                                        에스케이 이엔에스는 태양광 발전소를 통해 생산한 재생에너지 전력을 2026년부터 20년간 9개 계열사의 주요
+                                                        사업장과 데이터센터 등에 공급한다. 이를 통해 누적 500만t의 온실가스를 감축하며, 이는 소나무 약 2천만그루를
+                                                        심는 효과와 동일하다고 한다.
+                                                    </p>
+                                                </div>
+                                            </div>
+                                            <!-- // item -->
+
+                                            <!-- 2 -->
+                                            <div class="item">
+                                                <!-- .inner_item>.title>h3+span -->
+                                                <div class="inner_item">
+                                                    <div class="title">
+                                                        <h3>* SK 행복나눔재단
+                                                        </h3>
+                                                        <span> 등록 2024-01-11</span>
+                                                    </div>
+                                                    <!-- 기사 -->
+                                                    <h4>‘직업을 배우는 진짜 학교’ SK 뉴스쿨이 2024년도 신입생 모집</h4>
+                                                    <p>‘직업을 배우는 진짜 학교’ SK 뉴스쿨이 2024년도 신입생 모집 기간 교육장 투어 및 입학 상담을 진행한다.
+                                                        내년도 SK 뉴스쿨 신입생 모집은 12월 1일부터 14일까지 2주간 진행된다.
+                                                        SK 뉴스쿨은 스스로 성장을 일구는 청년들이 ‘전문 직업인’으로 자립하고, 건강한 사회 구성원으로 거듭날 수 있도록
+                                                        SK, 행복나눔재단, 행복에프앤씨재단이 운영하는 청년 인재 양성 사업이다. 교육 기간 학생들이 교육과 성장에 집중할
+                                                        수 있도록 교육비(학비, 교육 기자재, 교재, 실습 물품, 자격증 취득비 등)를 비롯해 △생활·주거 장학금 △SK
+                                                        관계사 및 기업 인턴십 기회, 채용 우대 △진로 상담 및 개인별 취업 컨설팅 등 다양한 지원을 제공한다.
+                                                        먼저 12월 5일(화)에는 교육장 투어 및 입학 상담(오프라인)이 계획돼 있다. 이어 12월 11일(월)에는
+                                                        온라인(Zoom) 및 전화 입학 상담이 진행될 예정이다.
+                                                        입학 상담에서는 5개 학과(△조리과 △카페베이커리과 △MD과 △정보보안과 △자동차판금도장과) 매니저들이 직접 SK
+                                                        뉴스쿨의 인재상, 커리큘럼, 강사진, 교육 일정, 교육 강점, 취업처 등을 설명한다. 12월 프로그램의 자세한
+                                                        일정은 추후 SK 뉴스쿨 홈페이지와 인스타그램을 통해 안내할 계획이다.
+                                                        [출처] SK 뉴스쿨 2024년 신입생 모집, 무스펙·무경력·비전공자 가능|작성자 원미동 </p>
+                                                </div>
+                                            </div>
+                                            <!-- // item -->
+                                            <!-- 3 -->
+                                            <div class="item">
+                                                <!-- .inner_item>.title>h3+span -->
+                                                <div class="inner_item">
+                                                    <div class="title">
+                                                        <h3>* SK 어스온
+                                                        </h3>
+                                                        <span> 등록 2024-01-11</span>
+                                                    </div>
+                                                    <!-- 기사 -->
+                                                    <h4>SK어스온, 중국 광구서 원유 생산 성공…독자 탐사·개발·시추 첫 사례</h4>
+                                                    <p>
+                                                        SK이노베이션의 자원개발 자회사인 SK어스온이 2015년에 참여한 남중국해 광구에서 원유 생산이 시작된다고 25일
+                                                        밝혔다. SK어스온이 운영권을 확보한 광구 중 실제 원유 생산에 성공한 최초 사례다.
+                                                        SK어스온은 이날 남중국해 북동부 해상에 위치한 17/03 광구 내, 광구명 LF(Lufeng) 12-3 유전에서
+                                                        9월부터 원유 생산을 시작한다고 전했다.
+                                                        17/03 광구는 중국 선전시에서 약 300km 떨어져 있다. 크기는 여의도 면적의 15배에 달한다. 일일 생산량은
+                                                        석유 생산 정점을 기준으로 약 2만9500배럴이다. 이는 국내 하루 석유 소비량의 1%를 넘는 규모다.
+                                                        SK어스온은 2015년 중국 국영 석유회사인 ‘중국 해양 석유 집단 유한공사(CNOOC)’와 광권 계약을 체결했다.
+                                                        국내 민간기업 최초로 남중국해 해상 광구 사업에 뛰어들었다.
+                                                        SK어스온은 독자적인 광구 운영권을 확보한 이후 지질조사, 물리탐사 등 기초탐사 작업을 통해 2018년 탐사정
+                                                        시추에서 원유 발견에 성공했다. 생산준비를 위한 유전평가와 생산 시설 건설 등 개발 단계를 거쳐 마침내 원유 생산에
+                                                        이르렀다.
+                                                        출처 : UPI뉴스(https://www.upinews.kr) </p>
+                                                </div>
+                                            </div>
+                                            <!-- // item -->
+                                            <!-- 4 -->
+                                            <div class="item">
+                                                <!-- .inner_item>.title>h3+span -->
+                                                <div class="inner_item">
+                                                    <div class="title">
+                                                        <h3>* SK 하이닉스
+                                                        </h3>
+                                                        <span> 등록 2024-01-11</span>
+                                                    </div>
+                                                    <!-- 기사 -->
+                                                    <h4>SK어스온, 중국 광구서 원유 생산 성공…독자 탐사·개발·시추 첫 사례</h4>
+                                                    <p>
+                                                        키파운드리가 SK키파운드리로 사명을 변경했다. 회사는 새로운 이름과 함께 질화갈륨(GaN), 실리콘카바이드(SiC)
+                                                        등 차세대 칩 개발로 ‘딥체인지’에 나선다. 모회사인 SK하이닉스와 SK그룹 반도체 계열사 간 협력도 기대된다.
+                                                        3일 SK키파운드리는 최근 주주총회에서 주주들에게 사명 변경에 관한 승인을 받고 이달 1일부터 새로운 이름을
+                                                        사용하기로 했다고 밝혔다. SK키파운드리는 지난해 말 국내·해외 상표권 출원을 마쳤다.
+                                                        SK키파운드리는 2020년 9월 매그나칩반도체의 파운드리 사업부가 분사해 설립된 8인치 웨이퍼 파운드리 회사다.
+                                                        SK키파운드리는 충북 청주시에 월 10만 장 규모의 팹을 운영하고 있다. 다품종 소량 생산에 적합한 8인치 웨이퍼
+                                                        기반의 전력반도체와 디스플레이구동칩(DDI), 마이크로컨트롤유닛(MCU) 등 고객사의 시스템반도체를 위탁 생산한다.
+                                                        SK키파운드리는 2022년 8월 SK하이닉스 자회사로 편입됐다. SK키파운드리는 SK의 브랜드 가치와 회사 간
+                                                        결합이 대외 신인도 향상과 사업 확대로 이어질 것이라고 기대하고 있다. SK키파운드리 관계자는 “인수 이후
+                                                        통합(PMI) 과정을 진행하면서 사명 변경을 추진해왔으며 기존 고객과의 비즈니스 연속성을 고려해 SK키파운드리로
+                                                        최종 결정했다”고 설명했다.
+                                                    </p>
+                                                </div>
+                                            </div>
+                                            <!-- // item -->
+                                        </div>
+                                    </div>
+                                    <!-- // tab -->
+                                    <!-- tab menu  2 -->
+                                    <div class="tab">
+                                        <div class="slider">
+                                            <!-- 1 -->
+                                            <div class="item">
+                                                <!-- .inner_item>.title>h3+span -->
+                                                <div class="inner_item">
+                                                    <div class="title">
+                                                        <h3>* SK 그룹</h3>
+                                                        <span> 등록 2024-01-11</span>
+                                                    </div>
+                                                    <!-- 기사 -->
+                                                    <h4>[신년사] 박상규 SK이노 총괄사장 "초불확실성 시대…본원경쟁력 강화"</h4>
+                                                    <p>초불확실성 시대 맞아 '전면적 체질 개선 및 포트폴리오 내실 다지기' 강조
+
+                                                        박상규 SK이노베이션 총괄사장이 2024년 새해를 맞아 SK이노베이션 계열 구성원들에게 초불확실성 시대 속
+                                                        지속가능한 성장을 위해 역량을 결집해 생존력을 확보하고 본원적 경쟁력을 강화할 것을 주문했다.
+
+                                                        박상규 총괄사장은 2일 SK이노베이션 계열 구성원들에게 보낸 이메일 신년사를 통해 전체 사업영역에 있어서의 전면적
+                                                        체질개선 및 포트폴리오 내실 다지기 등을 강조했다.
+
+                                                        박 총괄사장은 “SK이노베이션은 ‘그린 에너지 & 소재 기업(Green Energy & Materials
+                                                        Company)’으로 도약하기 위해 쉼 없이 달려왔다”며 “그린 기술(Green Tech) 기반의 사업 포트폴리오
+                                                        혁신으로 ‘카본 투 그린(Carbon to Green)’의 토대를 만들어 냈다”며 그간의 사업성과를 평가하고
+                                                        구성원들을 격려했다.
+
+                                                        특히 그는 이른바 초불확실성의 시대를 맞아 SK이노베이션 계열 모두가 본원적 사업 경쟁력 확보 방안을 마련해 적극
+                                                        추진해 나갈 것을 강조했다.
+
+                                                        그러면서 “지정학적 갈등과 글로벌 시장 블록화 등 세계 정세 불안정으로 올해는 그 어느 때보다 도전적인 한 해가 될
+                                                        것”이라며 “우리가 가진 역량을 총결집시켜 생존력을 확보하고 본원적 경쟁력을 강화함으로써 지속가능 성장을 이끌어 낼
+                                                        수 있을 것”이라고 말했다.
+
+                                                        구체적으로는 “생존이 위협받는 글로벌 경영환경 속에서 살아남기 위한 체질 개선이 시급한 상황”이라며
+                                                        “인풋(Input) 대비 아웃풋(Output)이라는 효율성 관점에서 전체적인 전략 방향을 재점검하고 경쟁력
+                                                        강화방안을 도출하자”고 말했다.
+
+                                                        이어 “구성원 모두가 비효율적이고 낭비되는 것들을 찾아내 개선해 나가는 노력을 기울여 나가자”고 당부했다.
+
+                                                        박 총괄사장은 “SK이노베이션 계열의 사업 포트폴리오를 과거와 현재의 성과, 앞으로의 전망, 수익성, 경쟁력,
+                                                        리스크 측면에서 냉철히 평가하고, 이를 기반으로 제한된 자원을 제대로 배분하는 노력을 기울임으로써 내실 있는
+                                                        포트폴리오를 만들어 갈 것”이라며 SK이노베이션 사업회사 간 시너지 강화 및 전체 관점의 자원 효율화, SK 고유의
+                                                        ‘또 같이’ 경영 장점 극대화 등도 강조했다.
+                                                    </p>
+                                                </div>
+                                            </div>
+                                            <!-- // item -->
+
+                                            <!-- 2 -->
+                                            <div class="item">
+                                                <!-- .inner_item>.title>h3+span -->
+                                                <div class="inner_item">
+                                                    <div class="title">
+                                                        <h3>* SK팜테코
+
+                                                        </h3>
+                                                        <span> 등록 2024-01-11</span>
+                                                    </div>
+                                                    <!-- 기사 -->
+                                                    <h4>SK팜테코, 6000억 프리IPO 성공…사학연금 등 2000억 추가 베팅</h4>
+                                                    <p>SK(034730)그룹의 바이오 의약품 위탁개발생산(CDMO) 업체인 SK팜테코가 5억 달러(약 6000억 원)
+                                                        규모의 프리IPO(상장 전 지분 투자)를 성공적으로 완료했다. 사학연금과 군인공제회 등 큰손 투자가들이 나서 향후
+                                                        바이오 사업의 유망성을 확인하는 한편 SK스퀘어(402340)의 11번가 주식매수청구권(콜옵션) 포기 이후 제기된
+                                                        투자 업계의 SK에 대한 우려감도 씻어냈다는 평가다.
+
+                                                        27일 투자은행(IB) 업계에 따르면 SK팜테코는 이날 브레인자산운용과 5억 달러 규모의 프리IPO 투자를 확약하는
+                                                        주식매매계약(SPA)을 체결했다. SK팜테코는 투자 지주사인 SK가 지분 100%를 보유하고 있다. 앞서
+                                                        SK팜테코는 7월 브레인자산운용을 프리IPO 우선협상자로 선정한 후 9월 본계약을 맺었다.
+
+                                                        브레인자산운용은 올 10월 1차로 4000억 원을 조달한 데 이어 이번에 추가로 2000억 원의 투자를 유치했다.
+                                                        사학연금과 군인공제회 등 연기금·공제회 3곳이 각각 400~500억 원의 뭉칫돈을 투입하기로 했고 은행과 증권사
+                                                        6곳이 50~300억 원씩 투자를 집행하기로 약정했다. SK팜테코는 1·2차 투자 유치 과정에서 동일하게 4조 원의
+                                                        기업가치를 인정 받았다.</p>
+                                                </div>
+                                            </div>
+                                            <!-- // item -->
+                                            <!-- 3 -->
+                                            <div class="item">
+                                                <!-- .inner_item>.title>h3+span -->
+                                                <div class="inner_item">
+                                                    <div class="title">
+                                                        <h3>* SK온
+
+                                                        </h3>
+                                                        <span> 등록 2024-01-11</span>
+                                                    </div>
+                                                    <!-- 기사 -->
+                                                    <h4>SK온, 현대차·포드 등 고객사 잇단 낭보에 인지도 제고 기대↑</h4>
+                                                    <p>
+                                                        31일 업계에 따르면 현대차는 최근 현대차 아이오닉5를 타고 약 10일에 걸쳐 동남아 5개국 총 3천188㎞를
+                                                        이동하는 '아이오닉 드라이빙 익스피리언스 인 아시아' 행사를 성공적으로 마쳤다.
+
+                                                        아이오닉5는 국가별로 상이한 운행 조건에도 325마력의 강력한 출력으로 안정적인 주행 성능을 보였으며, 긴 1회
+                                                        충전 주행 거리(458㎞) 덕에 전기차 충전 인프라가 부족한 동남아 지역에서 최소한의 충전으로 대장정을 완주했다.
+                                                        아이오닉5에 탑재된 배터리는 SK온이 만든 최대 용량 77.4킬로와트시(kWh)의 하이니켈 배터리로, 니켈 함량이
+                                                        83%에 달한다.
+
+                                                        SK온은 2014년 NCM622 배터리, 2018년 NCM811 배터리 등을 세계 최초로 상용화했고, 2019년에는
+                                                        니켈 함량이 90%에 달하는 NCM9 배터리를 세계 최초로 개발했다.
+
+                                                        이들 배터리는 충전 시간이 짧은 것도 특징이다. SK온은 특수 코팅 기술을 적용, 18분 만에 80%까지 급속
+                                                        충전이 가능한 SF 배터리로 올해 열린 'CES 2023'에서 내장기술 부문 혁신상을 받았다.</p>
+                                                </div>
+                                            </div>
+                                            <!-- // item -->
+                                            <!-- 4 -->
+                                            <div class="item">
+                                                <!-- .inner_item>.title>h3+span -->
+                                                <div class="inner_item">
+                                                    <div class="title">
+                                                        <h3>* SK 이노베이션
+                                                        </h3>
+                                                        <span> 등록 2024-01-11</span>
+                                                    </div>
+                                                    <!-- 기사 -->
+                                                    <h4>삼성·SK·인텔 "3C에 달렸다"…새해 200조원대 시장 '들썩'례</h4>
+                                                    <p> 31일 반도체업계에 따르면 지난 12월 초 AI 가속기(AI 서비스용 데이터를 학습·추론할 때 필수적인 반도체
+                                                        패키지) 신제품 ‘MI300X’를 공개한 팹리스(반도체 설계전문 기업) AMD는 칩렛을 활용해 개발했다. 칩렛은
+                                                        그래픽처리장치(GPU), 중앙처리장치(CPU), 입출력(I/O)단자 등을 각각의 공정에서 생산한 뒤 합치는
+                                                        기술이다. 예컨대 초미세공정에서 생산해야 할 필요성이 큰 CPU는 4나노미터(㎚: 1㎚=10억분의 1m), GPU는
+                                                        7㎚, 전통 공정을 활용해도 되는 I/O단자는 14㎚ 등에서 양산한 뒤 표준 규격을 활용해 연결하는 것이다.
+
+                                                        ​
+
+                                                        1~2년 전까지만 해도 칩 생산의 트렌드는 CPU, GPU 등 여러 기능을 지닌 반도체를 동일 공정에서 하나의
+                                                        다이(die) 위에 집적하는 ‘통합칩셋(SoC)’이었다. 하지만 초미세공정 진입으로 칩 설계의 어려움이 커졌고 수율
+                                                        하락 등으로 비용도 늘었다. 기업은 각 반도체에 가장 적합한 공정에서 양산한 뒤 합치는 방안을 모색했다. 이 결과
+                                                        탄생한 게 칩렛이다.
+
+                                                        ​
+
+                                                        칩렛 시장 규모는 2022년 65억달러(약 8조4000억원)에서 2028년 1480억달러(약 192조원) 규모로
+                                                        커질 전망이다. 반도체업계 관계자는 “2023년 삼성전자, TSMC, 인텔 등이 칩렛 생태계 구축을 위한 컨소시엄을
+                                                        구축할 정도로 업계 메가트렌드가 됐다”고 설명했다.
+                                                        [출처] 삼성·SK·인텔 "3C에 달렸다"…새해 200조원대 시장 '들썩'|작성자 가장 빛나는 별
+                                                    </p>
+                                                </div>
+                                            </div>
+                                            <!-- // item -->
+                                        </div>
+                                    </div>
+                                    <!-- // tab -->
+                                    <!-- tab menu  3 -->
+                                    <div class="tab">
+                                        <div class="slider">
+                                            <!-- 1 -->
+                                            <div class="item">
+                                                <!-- .inner_item>.title>h3+span -->
+                                                <div class="inner_item">
+                                                    <div class="title">
+                                                        <h3>* SK 케미칼</h3>
+                                                        <span> 등록 2024-01-11</span>
+                                                    </div>
+                                                    <!-- 기사 -->
+                                                    <h4>SK그룹, <br> 이웃사랑 성금 120억원 기부</h4>
+                                                    <p>SK그룹이 이웃사랑 성금 120억원을 사회복지공동모금회에 기부했다.
+
+                                                        SK는 11일 지동섭 SK수펙스추구협의회 SV위원장이 서울 중구 정동에 있는 사회복지공동모금회(회장 김병준)를 찾아
+                                                        성금 120억원을 전달했다고 밝혔다.
+
+                                                        SK는 지난 1999년 이후 매년 이웃사랑 성금을 기부해왔는데, 올해까지 누적 기부액이 2345억원에 달한다. 특히
+                                                        올해 경기 부진으로 경영 환경이 어려운 상황에서도 연말 성금 규모를 지난해와 같이 120억원을 유지했다.
+
+                                                        지동섭 위원장은 “SK 기부가 우리 이웃들의 더 나은 삶과 행복에 도움이 되길 바란다”며 “SK는 앞으로도
+                                                        이해관계자의 행복을 추구하고, 사회적 책임을 다하는 기업 경영을 지속할 것”이라고 말했다.
+
+                                                        SK그룹은 올해에도 지속가능 사회를 위한 ESG(환경·사회·지배구조) 경영에 힘써왔다.
+
+                                                        SK그룹은 지난 4월 신한은행, 이디야커피와 대한상공회의소 신기업가정신협의회(ERT) ‘다함께 나눔 프로젝트’에
+                                                        참여해 △행복도시락 제공(3억원) △인턴십 급여 지원(4억원) △마음건강지킴이 버스 지원(8억원) 등 위기청소년
+                                                        자립지원 사업을 벌였다.
+
+                                                        또 지난 4월 강원도 강릉 산불과 7월 전국적인 집중호우 당시에 각각 성금 20억원씩을 지원하고, 관계사 별로
+                                                        피해복구 활동에 발벗고 나서기도 했다. 지난 2월에는 강진이 발생한 튀르키예·시리아 지역의 피해 복구를 위해
+                                                        100만 달러를 지원한 바 있다.
+
+                                                    </p>
+                                                </div>
+                                            </div>
+                                            <!-- // item -->
+
+                                            <!-- 2 -->
+                                            <div class="item">
+                                                <!-- .inner_item>.title>h3+span -->
+                                                <div class="inner_item">
+                                                    <div class="title">
+                                                        <h3>* SK 행복나눔재단
+                                                        </h3>
+                                                        <span> 등록 2024-01-11</span>
+                                                    </div>
+                                                    <!-- 기사 -->
+                                                    <h4>SK, 사회문제 해결 위해 서울시와 손잡고 '약자 동행' 나선다</h4>
+                                                    <p>SK그룹과 서울시가 복지 사각지대 약자(弱者)들의 어려움을 가중시키는 사회문제 해결을 위해
+                                                        사회성과인센티브(SPC·Social Progress Credit) 프로그램 도입 등 포괄적 협력 방안을 공동으로
+                                                        마련해 적극 추진해 나가기로 했다.
+
+                                                        국내 ESG(환경 · 사회 · 지배구조) 경영을 주도해온 SK그룹과 시정(市政) 핵심철학으로 ‘약자와의 동행’을
+                                                        강조해온 서울시가 사회성과인센티브의 취지와 성과에 공감해 사회문제 해결에 발벗고 나섰다는 점에서 관심이 모아지고
+                                                        있다.
+
+                                                        이를 위해 SK그룹과 서울시는 지난 28일 서울시청에서 조경목 SV위원장과 김의승 서울시 행정1부시장, 나석권
+                                                        사회적가치연구원(CSES) 원장 등이 참여해 ‘약자동행 실천과 가치 확산을 위한 업무협약(MOU)’을 체결했다.
+
+                                                        양기관은 앞으로 △사회문제를 해결한 성과에 비례해 보상을 해주는 사업을 추진하고, △약자동행을 위한 민관협력 사업을
+                                                        발굴하는 한편 △기술동행 네트워크 참여 및 기술활용 지원 등 공동협력을 벌여 나가기로 했다.
+
+                                                        먼저 서울시는 협력 파트너사인 사회적기업 · 소셜벤처를 대상으로 SK의 사회성과인센티브(SPC) 프로그램을 도입,
+                                                        시행키로 했다.
+
+                                                        최태원 SK 회장이 제안해 SK그룹이 지난 2015년부터 시행해온 사회성과인센티브는 사회적기업이 창출하는
+                                                        ‘사회성과’에 비례해 ‘현금 인센티브’를 제공하는 프로그램으로, SK그룹은 지난해까지 527억원의 인센티브를 제공한
+                                                        바 있다.
+                                                    </p>
+                                                </div>
+                                            </div>
+                                            <!-- // item -->
+                                            <!-- 3 -->
+                                            <div class="item">
+                                                <!-- .inner_item>.title>h3+span -->
+                                                <div class="inner_item">
+                                                    <div class="title">
+                                                        <h3>* SK 어스온
+                                                        </h3>
+                                                        <span> 등록 2024-01-11</span>
+                                                    </div>
+                                                    <!-- 기사 -->
+                                                    <h4>SK-KB국민은행, <br>
+                                                        1조 규모 ESG 금리우대 대출 시행</h4>
+                                                    <p>
+                                                        SK와 KB국민은행이 ESG(환경·사회·지배구조) 우수협력사들에게 최대 1조원 규모의 저금리 대출을 시행해 나가기로
+                                                        했다.
+
+                                                        SK그룹이 ESG 관련 금리 우대 프로그램을 시중은행들과 잇따라 가동하는 것이어서 협력사들이 고금리 상황 등 고충을
+                                                        해결하는 데 큰 도움이 될 것으로 기대된다.
+
+                                                        양사는 지난 19일 서울 종로구 SK서린빌딩에서 조경목 SK 수펙스추구협의회 SV위원장과 이재근 KB국민은행장이
+                                                        참여해 SK그룹 협력사들의 ESG 경영 확대를 위한 양해각서(MOU)를 체결했다고 20일 밝혔다.
+
+                                                        이에 따라 SK그룹은 자체 개발한 ‘클릭(Click) ESG’ 프로그램으로 올해 기준 총 1100여곳 협력사들에
+                                                        대한 ESG 진단을 실시하고, 여기에서 우수등급을 받은 협력사들에게 각각 금리 0.9~1.4%P를 감면한 저금리
+                                                        대출을 시행해 나가기로 했다.
+
+                                                        특히 △에너지 저장(리튜이온 배터리, 배터리 관리체계 등) △환경보호(플라스틱 업사이클링, 폐수처리 등)
+                                                        △환경개선(대기오염 관리, 친환경공조시스템 등) 등 친환경 분야 기술력을 갖춘 ESG 우수협력사에 대해서는 최대
+                                                        2.7%P까지 금리를 낮춘 KB유망분야 성장기업 우대대출을 해주기로 했다.
+
+                                                        양사는 또 SK 협력사들의 ESG 경영수준 향상을 위해 ESG 컨설팅을 제공하고, 오는 10월 개최 예정인 ‘KB
+                                                        굿잡 채용 박람회’ 등을 통해 우수 인력 채용에도 도움을 줄 방침이다.
+
+                                                        조경목 위원장은 이날 “SK와 KB국민은행이 공동으로 추진하는 이번 상생협력 프로그램이 중소·중견 협력사들의 ESG
+                                                        경영 확대와 동반성장에 실질적이 도움이 되길 희망한다”고 말했다. </p>
+                                                </div>
+                                            </div>
+                                            <!-- // item -->
+                                            <!-- 4 -->
+                                            <div class="item">
+                                                <!-- .inner_item>.title>h3+span -->
+                                                <div class="inner_item">
+                                                    <div class="title">
+                                                        <h3>* SK 하이닉스
+                                                        </h3>
+                                                        <span> 등록 2024-01-11</span>
+                                                    </div>
+                                                    <!-- 기사 -->
+                                                    <h4>SK, 1천억대 <br>기업가치 ‘임팩트 유니콘’ 2개나 키웠다</h4>
+                                                    <p>
+                                                        SK그룹은 지난 9일 서울 종로구 SK서린사옥에서 인공지능(AI) 분야 소셜벤처 테스트웍스를 임팩트 유니콘으로
+                                                        선정해 사업지원금 1억원을 전달하고, 임팩트 유니콘 최고경영자(CEO)들과 지원협력 강화를 위한 간담회를 개최했다고
+                                                        10일 밝혔다.
+
+                                                        SK는 지난 2020년부터 사회문제를 해결하는 스타트업을 지속가능 기업으로 키우는 ‘임팩트 유니콘’ 프로그램을 통해
+                                                        테스트웍스까지 모두 8개사를 선정해 육성하고 있다. 이날 임팩트 유니콘 CEO 간담회에는 조경목 SK수펙스추구협의회
+                                                        SV위원장과 알리콘(분산 오피스 및 커리어 네트워크), 두브레인(발달장애 아동 치료) 대표 등이 참석했다.
+                                                        SK그룹은 알리콘에 글로벌 진출 지원금으로 8000만원을 전달했다.
+
+                                                        임팩트 유니콘은 사회 문제를 해결하는 스타트업 중 빠른 성장을 통해 경제적가치와 사회적가치 창출 총량을 혁신적으로
+                                                        키울 수 있는 기업을 뜻한다.
+
+                                                        최태원 SK그룹 회장은 “롤모델이 되는 스타 SE(Social Enterprise: 사회적기업 · 소셜벤처)가
+                                                        나와야 우수한 인재들이 몰리고 필요한 정책들이 입안되는 SE생태계 선순환 구조가 만들어질 수 있다”고 강조해왔다.
+
+                                                        이에 따라 SK는 임팩트 유니콘을 선정해 △사업지원금 지급 △SK 관계사와 사업협력 △투자 유치 △멘토링 및 홍보
+                                                        등 지원 육성책을 펴왔다.
+
+                                                        조경목 SV위원장은 이날 지원금 전달식 및 간담회에서 “지난 3년간 임팩트 유니콘 프로그램을 통해 사회문제를
+                                                        해결하는 소셜벤처들이 지속가능하다는 것이 증명됐다”며 “혁신적인 아이디어를 갖고 있는 기업들의 성장을 꾸준히
+                                                        돕겠다”고 말했다.
+                                                    </p>
+                                                </div>
+                                            </div>
+                                            <!-- // item -->
+                                        </div>
+                                    </div>
+                                    <!-- // tab -->
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- 하단화살표 -->
+                <!-- a.btnTop>img -->
+                <a href="#" class="btnTop"><img src="./images/top-arrow.svg" alt="최상단 이동 화살표"></a>
+            </main>
+            <!-- =================================
+                footer 
+            ====================================-->
+            <!-- footer>.innerFooter>ul.bmenu>li*6>a -->
+            <footer>
+                <div class="innerFooter">
+                    <!-- 하단메뉴 -->
+                    <ul class="bmenu">
+                        <li><a href="#">Corporation
+                            </a>
+                            <!-- ul.list>li*6>a{name} -->
+                            <ul class="list">
+                                <li><a href="#">SK Picglobal소개</a></li>
+                                <li><a href="#">지속가능경영</a></li>
+                                <li><a href="#">윤리경영</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="#">Products
+                            </a>
+                            <ul class="list">
+                                <li><a href="#">PG</a></li>
+                                <li><a href="#">PO</a></li>
+                                <li><a href="#">SM</a></li>
+                                <li><a href="#">PGE</a></li>
+                                <li><a href="#">Renewables</a></li>
+                                <li><a href="#">MSDS</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="#">Customers
+                            </a>
+                            <ul class="list">
+                                <li><a href="#">제품자료실</a></li>
+                                <li><a href="#">고객문의</a></li>
+                                <li><a href="#">Contact Us</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="#">Communication</a>
+                            <ul class="list">
+                                <li><a href="#">전자공고</a></li>
+                                <li><a href="#">News</a></li>
+                                <li><a href="#">공시정보</a></li>
+                            </ul>
+                        </li>
+
+                        <li><a href="#">개인정보보호정책</a>
+                            <ul class="list">
+                                <li><a href="#">SK그룹</a></li>
+                                <li><a href="#">SK Picglobal</a></li>
+                            </ul>
+                        </li>
+
+                        <li><a href="#">Career
+                            </a>
+                            <ul class="list">
+                                <li><a href="#">SK채용사이트</a></li>
+                                <li><a href="#">직원인터뷰</a></li>
+                            </ul>
+                        </li>
+
+                    </ul>
+                    <!-- 관련사이트+copyright -->
+                    <!-- .fmCopy>select>option*6 -->
+                    <div class="fmCopy">
+                        <!-- name : 서버에 제출시 사용되는 필드명 
+                        이 이름으로 식별하여 데이타 처리함 
+                    id : 스타일 적용시 사용 
+                동일한 id명을 가진 요소가 없도록 주의 -->
+                        <!-- <select name="" id="">  -->
+                        <select id="familySites" onchange="Site()">
+                            <!-- option value - 서버로 전송되는 값 넣기 -->
+                            <option value="#">패밀리 사이트</option>
+                            <option value="SK">SK 주식회사</option>
+                            <option value="SKC">SKC</option>
+                            <option value="SKN">SK 넥실리스</option>
+                            <option value="SKEN">SK 엔펄스</option>
+                            <option value="SKPucore">SK Pucore</option>
+                        </select>
+                        <!-- copyright -->
+                        <div class="copyright">
+                            <p>
+                                &copy; 2024 SK Picglobal. ALL RIGHTS RESERVED.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </footer>
+        </div>
+        <!-- Swiper 라이브러리 스크립트를 불러오기 -->
+        <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+        <script>
+            // swiper slide plugin
+            // .mySwiper 에 슬라이드 적용
+            var swiper = new Swiper(".mySwiper", {
+                // 이전 다음버튼 사용하여 슬라이드 전환
+                navigation: {
+                    nextEl: ".swiper-button-next",
+                    prevEl: ".swiper-button-prev",
+                },
+                // 인디케이터
+                pagination: {
+                    el: ".swiper-pagination", // 표시할 요소 선택자
+                    clickable: true, // 버튼 클릭시 슬라이드 이동하도록 설정
+                },
+            });
+        </script>
+    </body>
+
+    </html>
